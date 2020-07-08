@@ -1,8 +1,8 @@
-* Z:\Google Drive\11_semestre\Lab_electronica\Proyecto\Fuente_LabElectronica\Fuente_v1.asc
+* C:\Users\lakat\Documents\GitHub\Fuente_LabElectronica\Fuente_v1.asc
 D10 N004 N001 MURS320
 D11 N012 N001 MURS320
-D12 N009 N012 MURS320
-D13 N009 N004 MURS320
+D12 N007 N012 MURS320
+D13 N007 N004 MURS320
 L1 N004 0 1µ
 L2 0 N012 1µ
 L3 N003 0 380µ
@@ -22,43 +22,41 @@ D3 P001 N010 MURS320
 C3 N006 0 100µ
 J1 N011 base base 2N3819
 J2 N010 base base 2N3819
-D7 N009 N014 MURS320
-R1 N014 N017 240
-D8 N014 N017 MURS320
-C4 N017 0 10µ
-R2 N017 N020 {Rd}
-D9 N021 0 MURS320
-D14 N020 N021 MURS320
-C5 N014 0 1m
-R5 N016 N015 1.25
-D15 P002 N016 MURS320
-D16 N019 P002 MURS320
-C6 N016 0 100µ
-J3 N020 base2 base2 2N5486
-J4 N019 base2 base2 2N3819
-R7 V- N014 2k
-R8 0 V- 8k
+D7 N007 V- MURS320
+R1 V- N016 240
+D8 V- N016 MURS320
+C4 N016 0 10µ
+R2 N016 N019 {Rd}
+D9 N020 0 MURS320
+D14 N019 N020 MURS320
+C5 V- 0 1m
+R5 N015 N014 1.25
+D15 P002 N015 MURS320
+D16 N018 P002 MURS320
+C6 N015 0 100µ
+J3 N019 base2 base2 2N5486
+J4 N018 base2 base2 2N3819
 V3 base2 0 -10
-XU3 N009 N018 N015 LM337
-XU4 N016 N017 N014 LM337
-XU1 N001 N007 N005 LM317/TI
-XU2 N006 N008 N002 LM317/TI
-R9 N016 N018 {R_limit*1k}
-R10 N019 N018 {1k*(1-R_limit)}
-R11 N006 N007 {R_limit*1k}
-R12 N010 N007 {1k*(1-R_limit)}
+XU3 N007 N017 N014 LM337
+XU4 N015 N016 V- LM337
+R9 N015 N017 {R_limit*1k}
+R10 N018 N017 {1k*(1-R_limit)}
+R11 N006 N009 {R_limit*1k}
+R12 N010 N009 {1k*(1-R_limit)}
 R13 V+ N002 0.0001
+XU5 N006 N008 N002 LM317 LM317
+XU6 N001 N009 N005 LM317 LM317
 .model D D
-.lib C:\Users\javierbisbal\Documents\LTspiceXVII\lib\cmp\standard.dio
+.lib C:\Users\lakat\Documents\LTspiceXVII\lib\cmp\standard.dio
 .model NJF NJF
 .model PJF PJF
-.lib C:\Users\javierbisbal\Documents\LTspiceXVII\lib\cmp\standard.jft
+.lib C:\Users\lakat\Documents\LTspiceXVII\lib\cmp\standard.jft
 .inc MURS320T3.LIB
 K L3 L1 L2 1
 .tran 1
 .param Rd= 240*12
 .param R_limit = 0.5
-.lib LM317-TI.sub
+.lib LM317.sub
 .lib LM337.sub
 .backanno
 .end
