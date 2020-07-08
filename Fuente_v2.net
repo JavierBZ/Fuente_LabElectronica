@@ -37,6 +37,8 @@ D14 0 P002 MURS320
 D21 0 V+ MURS320
 D22 V- 0 MURS320
 L2 0 N010 1µ
+R7 V+ 0 {load}
+R8 V- 0 {load}
 .model D D
 .lib C:\Users\lakat\Documents\LTspiceXVII\lib\cmp\standard.dio
 .inc MURS320T3.LIB
@@ -46,6 +48,7 @@ K L3 L1 L2 1
 .param R_limit = 0.5
 .param Rdiv = 200
 .param Rd2=5k
+.param load=1Meg
 .lib LM317.sub
 .lib LM337.sub
 .backanno
