@@ -19,7 +19,7 @@ D7 N007 V- MURS320
 R1 V- N013 240
 D8 V- N013 MURS320
 C4 N013 N006 10µ
-R2 N013 N006 {Rd}
+R2 N013 N006 {Rd2}
 C5 V- 0 0.1µ
 R5 N012 N011 1.25
 C6 N012 0 2200µ
@@ -45,6 +45,7 @@ K L3 L1 L2 1
 .param Rd=0.0001
 .param R_limit = 0.5
 .param Rdiv = 200
+.param Rd2=5k
 .lib LM317.sub
 .lib LM337.sub
 .backanno
