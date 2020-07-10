@@ -1,0 +1,22 @@
+Circuit: * C:\Users\lakat\Documents\GitHub\Fuente_LabElectronica\Fuente_v5.asc
+
+Direct Newton iteration for .op point succeeded.
+
+Date: Fri Jul 10 01:21:53 2020
+Total elapsed time: 2.663 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 92744
+traniter = 92705
+tranpoints = 35353
+accept = 24700
+rejected = 10653
+matrix size = 183
+fillins = 290
+solver = Normal
+Thread vector: 14.0/7.9[6] 7.0/3.4[6] 4.2/2.3[6] 1.0/1.8[1]  2592/500
+Matrix Compiler1: 45.22 KB object code size  6.9/3.8/[2.5]
+Matrix Compiler2: 24.78 KB object code size  2.0/2.3/[1.4]
+
